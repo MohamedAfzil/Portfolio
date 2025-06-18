@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohamed Afzil MA - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="Mohamed_Afzil_Resume.pdf" download target="_blank">📄 Resume</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Mohamed Afzil MA</h1>
+    <p>Aspiring Web Developer</p>
+    <div class="social-links">
+      <a href="https://github.com/MohamedAfzil" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mohamed-afzil-1904x0802" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <section class="section about-box" id="about">
+    <h2>About Me</h2>
+    <img src="Afzil_Photo.jpg" alt="My Photo">
+    <p>Hello! I’m <strong>Mohamed Afzil</strong>, a student learning HTML, CSS, and JavaScript. I enjoy building web projects and solving real-world problems with code.</p>
+  </section>
+
+  <section class="section projects-box" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Budget Tracker App</h3>
+      <p>This is a simple web-based app to track daily expenses and savings. Built with HTML, CSS, and JS.</p>
+      <a href="https://mohamedafzil.github.io/MohamedAfzil/" target="_blank" class="btn">🔗 View Live</a>
+    </div>
+  </section>
+
+  <section class="section contact-box" id="contact">
+    <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:afzil.ma@gmail.com">afzil.ma@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919677429254">+91 9677429254</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Mohamed Afzil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const sections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
